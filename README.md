@@ -1,8 +1,10 @@
-#  E-book Webpage 
+##  E-book Webpage 
 Made by Marija Krotova
 
-### The project was completed as part of the Bootstrap 5 course by [Net Ninja](https://www.youtube.com/@NetNinja)
+Page can be accessed [here](https://mashakrot.github.io/bootstrap-usage/build/index)
 
-#### In this project, I created a simple e-book website to explore the most commonly used classes and elements of Bootstrap 5 framework
+The project was completed as part of the Bootstrap 5 course by [Net Ninja](https://www.youtube.com/@NetNinja)
 
-#### Sections and page elements such as navbar, cards, accordion, list groups, form, tooltips, modals, offcanvas, dropdowns were implemented and styled using Bootstrap 5 Framework classes, as well as styles customization
+In this project, I created a simple e-book website to explore the most commonly used classes and elements of Bootstrap 5 framework
+
+Sections and page elements such as navbar, cards, accordion, list groups, form, tooltips, modals, offcanvas, dropdowns were implemented and styled using Bootstrap 5 Framework classes, as well as styles customization
