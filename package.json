@@ -1,13 +1,59 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.3.3"
-  },
   "name": "bootstrap",
   "version": "1.0.0",
   "description": "In this project, I created a simple e-book website to explore the most commonly used classes and elements of Bootstrap 5 framework",
   "main": "index.js",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "10.4.x",
+    "browser-sync": "3.0.x",
+    "eslint": "9.4.0",
+    "gulp": "5.0.x",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "10.0.x",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "5.1.x",
+    "gulp-sourcemaps": "3.0.x",
+    "gulp-strip-css-comments": "3.0.x",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-webp": "^5.0.0",
+    "pixel-glass": "^1.0.13",
+    "posthtml-include": "^2.0.x",
+    "sass": "^1.32.0",
+    "stylelint": "16.6.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "build": "gulp build",
+    "start": "gulp start",
+    "webp": "gulp webp",
+    "sprite": "gulp sprite"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.15"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "del": "^4.1.1"
   },
   "author": "",
   "license": "ISC"
