@@ -42,7 +42,7 @@ gulp.task('cssmin', function () {
       .pipe(rename('main.min.css'))
       .pipe(sourcemap.write('.'))
       .pipe(stripCssComments())
-      .pipe(gulp.dest('source/css'))
+    //   .pipe(gulp.dest('source/css'))
       .pipe(gulp.dest('build/css'))
       .pipe(server.stream());
 });
@@ -58,7 +58,7 @@ gulp.task('css', function () {
       .pipe(rename('main.css'))
       .pipe(sourcemap.write('.'))
       .pipe(stripCssComments())
-      .pipe(gulp.dest('source/css'))
+    //   .pipe(gulp.dest('source/css'))
       .pipe(gulp.dest('build/css'))
       .pipe(server.stream());
 });
