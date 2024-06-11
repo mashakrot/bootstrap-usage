@@ -97,7 +97,7 @@ gulp.task('refresh', function (done) {
 
 
   gulp.task('images', function () {
-    return gulp.src('source/assets/*.{png,jpg,svg}')
+    return gulp.src('source/assets/*.{png,jpg,svg}', { encoding: false })
         .pipe(plumber())
       .pipe(imagemin())
       .pipe(gulp.dest('build/assets'));
